@@ -60,3 +60,13 @@ variable "tags" {
   description = "Tags to apply to resources"
   type        = map(string)
 }
+
+variable "allow_http_rule_name" {
+  description = "Name of the NSG rule to allow HTTP traffic"
+  type        = string
+}
+
+variable "allow_ssh_rule_name" {
+  description = "Name of the NSG rule to allow SSH traffic"
+  type        = string
+}

@@ -70,3 +70,9 @@ variable "allow_ssh_rule_name" {
   description = "Name of the NSG rule to allow SSH traffic"
   type        = string
 }
+
+variable "ip_configuration_name" {
+  description = "Name of the IP configuration for the network interface"
+  type        = string
+  default     = "internal"
+}
